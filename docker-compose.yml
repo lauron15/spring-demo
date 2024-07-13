@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  movies-postgres-db:
+    build:
+      dockerfile: Dockerfile
+      context: .
+    image: movies-postgres-db
+    container_name: movies-postgres-db
+    restart: always
+    ports:
+      - "5438:5432"

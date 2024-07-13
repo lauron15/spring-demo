@@ -1,0 +1,16 @@
+FROM postgres:15
+
+
+
+ENV LANG en_US.UTF-8
+
+ENV POSTGRES_DB movies_db
+
+
+
+ENV PORT 5432
+ENV POSTGRES_USER lauro
+ENV POSTGRES_PASSWORD lauropass
+ENV PGDATA: /var/lib/postgresql/data/
+ENV TZ=UTC
+EXPOSE $PORT
